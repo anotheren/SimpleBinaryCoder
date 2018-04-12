@@ -85,6 +85,7 @@
 		A065C079207F52D200DA2668 /* TestBinaryCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinaryCoder.swift; sourceTree = "<group>"; };
 		A065C07F207F61A200DA2668 /* SimpleBinaryCoderTests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleBinaryCoderTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A065C08E207F61B400DA2668 /* SimpleBinaryCoderTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleBinaryCoderTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A065C09B207F62FD00DA2668 /* SimpleBinaryCoder.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleBinaryCoder.podspec; sourceTree = "<group>"; };
 		A09A894A207F4DBA0067873B /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09A8957207F4E020067873B /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,6 +151,7 @@
 			children = (
 				A065C068207F50CA00DA2668 /* README.md */,
 				A065C069207F50CF00DA2668 /* LICENSE */,
+				A065C09B207F62FD00DA2668 /* SimpleBinaryCoder.podspec */,
 				A02C475E207F451F00852927 /* Sources */,
 				A02C475F207F452600852927 /* Tests */,
 				A02C4745207F450B00852927 /* Products */,
