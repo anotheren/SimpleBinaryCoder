@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A02C4761207F45AA00852927 /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4760207F45AA00852927 /* BinaryCodable.swift */; };
+		A02C4763207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4762207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift */; };
+		A02C4765207F484200852927 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4764207F484100852927 /* Endian.swift */; };
+		A02C4767207F486C00852927 /* BinaryCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4766207F486C00852927 /* BinaryCodableError.swift */; };
+		A02C4769207F488900852927 /* BinarySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4768207F488900852927 /* BinarySize.swift */; };
+		A02C476B207F49BD00852927 /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C476A207F49BD00852927 /* BinaryCoder.swift */; };
+		A02C4788207F4C1300852927 /* SimpleBinaryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A02C4747207F450B00852927 /* SimpleBinaryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A02C4789207F4C1300852927 /* SimpleBinaryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A02C4747207F450B00852927 /* SimpleBinaryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A09A893F207F4D340067873B /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C476A207F49BD00852927 /* BinaryCoder.swift */; };
+		A09A8940207F4D340067873B /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4760207F45AA00852927 /* BinaryCodable.swift */; };
+		A09A8941207F4D340067873B /* BinaryCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4766207F486C00852927 /* BinaryCodableError.swift */; };
+		A09A8942207F4D340067873B /* BinarySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4768207F488900852927 /* BinarySize.swift */; };
+		A09A8943207F4D340067873B /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4764207F484100852927 /* Endian.swift */; };
+		A09A8944207F4D340067873B /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4762207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift */; };
+		A09A895F207F4E250067873B /* SimpleBinaryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A02C4747207F450B00852927 /* SimpleBinaryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A09A8960207F4E270067873B /* SimpleBinaryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A02C4747207F450B00852927 /* SimpleBinaryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A09A8961207F4E2E0067873B /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C476A207F49BD00852927 /* BinaryCoder.swift */; };
+		A09A8962207F4E2E0067873B /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4760207F45AA00852927 /* BinaryCodable.swift */; };
+		A09A8963207F4E2E0067873B /* BinaryCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4766207F486C00852927 /* BinaryCodableError.swift */; };
+		A09A8964207F4E2E0067873B /* BinarySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4768207F488900852927 /* BinarySize.swift */; };
+		A09A8965207F4E2E0067873B /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4764207F484100852927 /* Endian.swift */; };
+		A09A8966207F4E2E0067873B /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4762207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift */; };
+		A09A8967207F4E2E0067873B /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C476A207F49BD00852927 /* BinaryCoder.swift */; };
+		A09A8968207F4E2E0067873B /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4760207F45AA00852927 /* BinaryCodable.swift */; };
+		A09A8969207F4E2E0067873B /* BinaryCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4766207F486C00852927 /* BinaryCodableError.swift */; };
+		A09A896A207F4E2E0067873B /* BinarySize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4768207F488900852927 /* BinarySize.swift */; };
+		A09A896B207F4E2E0067873B /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4764207F484100852927 /* Endian.swift */; };
+		A09A896C207F4E2E0067873B /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4762207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A02C4744207F450B00852927 /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02C4747207F450B00852927 /* SimpleBinaryCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBinaryCoder.h; sourceTree = "<group>"; };
+		A02C4748207F450B00852927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02C4760207F45AA00852927 /* BinaryCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryCodable.swift; sourceTree = "<group>"; };
+		A02C4762207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+ExpressibleByIntegerLiteral.swift"; sourceTree = "<group>"; };
+		A02C4764207F484100852927 /* Endian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endian.swift; sourceTree = "<group>"; };
+		A02C4766207F486C00852927 /* BinaryCodableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCodableError.swift; sourceTree = "<group>"; };
+		A02C4768207F488900852927 /* BinarySize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySize.swift; sourceTree = "<group>"; };
+		A02C476A207F49BD00852927 /* BinaryCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCoder.swift; sourceTree = "<group>"; };
+		A02C4774207F4AF500852927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02C4780207F4BB700852927 /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A065C068207F50CA00DA2668 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A065C069207F50CF00DA2668 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A09A894A207F4DBA0067873B /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09A8957207F4E020067873B /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A02C4740207F450B00852927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02C477C207F4BB700852927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8946207F4DBA0067873B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8953207F4E020067873B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A02C473A207F450B00852927 = {
+			isa = PBXGroup;
+			children = (
+				A065C068207F50CA00DA2668 /* README.md */,
+				A065C069207F50CF00DA2668 /* LICENSE */,
+				A02C475E207F451F00852927 /* Sources */,
+				A02C475F207F452600852927 /* Tests */,
+				A02C4745207F450B00852927 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A02C4745207F450B00852927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02C4744207F450B00852927 /* SimpleBinaryCoder.framework */,
+				A02C4780207F4BB700852927 /* SimpleBinaryCoder.framework */,
+				A09A894A207F4DBA0067873B /* SimpleBinaryCoder.framework */,
+				A09A8957207F4E020067873B /* SimpleBinaryCoder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A02C475E207F451F00852927 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A02C4748207F450B00852927 /* Info.plist */,
+				A02C4747207F450B00852927 /* SimpleBinaryCoder.h */,
+				A02C476A207F49BD00852927 /* BinaryCoder.swift */,
+				A02C4760207F45AA00852927 /* BinaryCodable.swift */,
+				A02C4766207F486C00852927 /* BinaryCodableError.swift */,
+				A02C4768207F488900852927 /* BinarySize.swift */,
+				A02C4764207F484100852927 /* Endian.swift */,
+				A02C4762207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A02C475F207F452600852927 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A02C4774207F4AF500852927 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A02C4741207F450B00852927 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02C4788207F4C1300852927 /* SimpleBinaryCoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02C477D207F4BB700852927 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02C4789207F4C1300852927 /* SimpleBinaryCoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8947207F4DBA0067873B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09A8960207F4E270067873B /* SimpleBinaryCoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8954207F4E020067873B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09A895F207F4E250067873B /* SimpleBinaryCoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A02C4743207F450B00852927 /* SimpleBinaryCoder iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02C4758207F450B00852927 /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder iOS" */;
+			buildPhases = (
+				A02C473F207F450B00852927 /* Sources */,
+				A02C4740207F450B00852927 /* Frameworks */,
+				A02C4741207F450B00852927 /* Headers */,
+				A02C4742207F450B00852927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleBinaryCoder iOS";
+			productName = SimpleBinaryCoder;
+			productReference = A02C4744207F450B00852927 /* SimpleBinaryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A02C477F207F4BB700852927 /* SimpleBinaryCoder macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02C4785207F4BB700852927 /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder macOS" */;
+			buildPhases = (
+				A02C477B207F4BB700852927 /* Sources */,
+				A02C477C207F4BB700852927 /* Frameworks */,
+				A02C477D207F4BB700852927 /* Headers */,
+				A02C477E207F4BB700852927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleBinaryCoder macOS";
+			productName = "SimpleBinaryCoder macOS";
+			productReference = A02C4780207F4BB700852927 /* SimpleBinaryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A09A8949207F4DBA0067873B /* SimpleBinaryCoder watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09A894F207F4DBA0067873B /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder watchOS" */;
+			buildPhases = (
+				A09A8945207F4DBA0067873B /* Sources */,
+				A09A8946207F4DBA0067873B /* Frameworks */,
+				A09A8947207F4DBA0067873B /* Headers */,
+				A09A8948207F4DBA0067873B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleBinaryCoder watchOS";
+			productName = "SimpleBinaryCoder watchOS";
+			productReference = A09A894A207F4DBA0067873B /* SimpleBinaryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A09A8956207F4E020067873B /* SimpleBinaryCoder tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09A895C207F4E020067873B /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder tvOS" */;
+			buildPhases = (
+				A09A8952207F4E020067873B /* Sources */,
+				A09A8953207F4E020067873B /* Frameworks */,
+				A09A8954207F4E020067873B /* Headers */,
+				A09A8955207F4E020067873B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleBinaryCoder tvOS";
+			productName = "SimpleBinaryCoder tvOS";
+			productReference = A09A8957207F4E020067873B /* SimpleBinaryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A02C473B207F450B00852927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = yidongyunshi.com;
+				TargetAttributes = {
+					A02C4743207F450B00852927 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					A02C477F207F4BB700852927 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					A09A8949207F4DBA0067873B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					A09A8956207F4E020067873B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A02C473E207F450B00852927 /* Build configuration list for PBXProject "SimpleBinaryCoder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A02C473A207F450B00852927;
+			productRefGroup = A02C4745207F450B00852927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A02C4743207F450B00852927 /* SimpleBinaryCoder iOS */,
+				A09A8956207F4E020067873B /* SimpleBinaryCoder tvOS */,
+				A02C477F207F4BB700852927 /* SimpleBinaryCoder macOS */,
+				A09A8949207F4DBA0067873B /* SimpleBinaryCoder watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A02C4742207F450B00852927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02C477E207F4BB700852927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8948207F4DBA0067873B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8955207F4E020067873B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A02C473F207F450B00852927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02C476B207F49BD00852927 /* BinaryCoder.swift in Sources */,
+				A02C4767207F486C00852927 /* BinaryCodableError.swift in Sources */,
+				A02C4761207F45AA00852927 /* BinaryCodable.swift in Sources */,
+				A02C4769207F488900852927 /* BinarySize.swift in Sources */,
+				A02C4763207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift in Sources */,
+				A02C4765207F484200852927 /* Endian.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02C477B207F4BB700852927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09A893F207F4D340067873B /* BinaryCoder.swift in Sources */,
+				A09A8941207F4D340067873B /* BinaryCodableError.swift in Sources */,
+				A09A8940207F4D340067873B /* BinaryCodable.swift in Sources */,
+				A09A8944207F4D340067873B /* Ex+ExpressibleByIntegerLiteral.swift in Sources */,
+				A09A8943207F4D340067873B /* Endian.swift in Sources */,
+				A09A8942207F4D340067873B /* BinarySize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8945207F4DBA0067873B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09A8967207F4E2E0067873B /* BinaryCoder.swift in Sources */,
+				A09A8969207F4E2E0067873B /* BinaryCodableError.swift in Sources */,
+				A09A8968207F4E2E0067873B /* BinaryCodable.swift in Sources */,
+				A09A896C207F4E2E0067873B /* Ex+ExpressibleByIntegerLiteral.swift in Sources */,
+				A09A896B207F4E2E0067873B /* Endian.swift in Sources */,
+				A09A896A207F4E2E0067873B /* BinarySize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09A8952207F4E020067873B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09A8961207F4E2E0067873B /* BinaryCoder.swift in Sources */,
+				A09A8963207F4E2E0067873B /* BinaryCodableError.swift in Sources */,
+				A09A8962207F4E2E0067873B /* BinaryCodable.swift in Sources */,
+				A09A8966207F4E2E0067873B /* Ex+ExpressibleByIntegerLiteral.swift in Sources */,
+				A09A8965207F4E2E0067873B /* Endian.swift in Sources */,
+				A09A8964207F4E2E0067873B /* BinarySize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A02C4756207F450B00852927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A02C4757207F450B00852927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A02C4759207F450B00852927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A02C475A207F450B00852927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A02C4786207F4BB700852927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A02C4787207F4BB700852927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		A09A8950207F4DBA0067873B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A09A8951207F4DBA0067873B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A09A895D207F4E020067873B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		A09A895E207F4E020067873B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yidongyunshi.SimpleBinaryCoder;
+				PRODUCT_MODULE_NAME = SimpleBinaryCoder;
+				PRODUCT_NAME = SimpleBinaryCoder;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A02C473E207F450B00852927 /* Build configuration list for PBXProject "SimpleBinaryCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02C4756207F450B00852927 /* Debug */,
+				A02C4757207F450B00852927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02C4758207F450B00852927 /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02C4759207F450B00852927 /* Debug */,
+				A02C475A207F450B00852927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02C4785207F4BB700852927 /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02C4786207F4BB700852927 /* Debug */,
+				A02C4787207F4BB700852927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09A894F207F4DBA0067873B /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09A8950207F4DBA0067873B /* Debug */,
+				A09A8951207F4DBA0067873B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09A895C207F4E020067873B /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09A895D207F4E020067873B /* Debug */,
+				A09A895E207F4E020067873B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A02C473B207F450B00852927 /* Project object */;
+}
