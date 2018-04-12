@@ -15,6 +15,8 @@
 		A02C476B207F49BD00852927 /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C476A207F49BD00852927 /* BinaryCoder.swift */; };
 		A02C4788207F4C1300852927 /* SimpleBinaryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A02C4747207F450B00852927 /* SimpleBinaryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A02C4789207F4C1300852927 /* SimpleBinaryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A02C4747207F450B00852927 /* SimpleBinaryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A065C073207F520E00DA2668 /* SimpleBinaryCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02C4744207F450B00852927 /* SimpleBinaryCoder.framework */; };
+		A065C07A207F52D200DA2668 /* TestBinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A065C079207F52D200DA2668 /* TestBinaryCoder.swift */; };
 		A09A893F207F4D340067873B /* BinaryCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C476A207F49BD00852927 /* BinaryCoder.swift */; };
 		A09A8940207F4D340067873B /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4760207F45AA00852927 /* BinaryCodable.swift */; };
 		A09A8941207F4D340067873B /* BinaryCodableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4766207F486C00852927 /* BinaryCodableError.swift */; };
@@ -37,6 +39,16 @@
 		A09A896C207F4E2E0067873B /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C4762207F471E00852927 /* Ex+ExpressibleByIntegerLiteral.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A065C074207F520E00DA2668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A02C473B207F450B00852927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02C4743207F450B00852927;
+			remoteInfo = "SimpleBinaryCoder iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A02C4744207F450B00852927 /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02C4747207F450B00852927 /* SimpleBinaryCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBinaryCoder.h; sourceTree = "<group>"; };
@@ -51,6 +63,8 @@
 		A02C4780207F4BB700852927 /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A065C068207F50CA00DA2668 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A065C069207F50CF00DA2668 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A065C06E207F520E00DA2668 /* SimpleBinaryCoderTests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleBinaryCoderTests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A065C079207F52D200DA2668 /* TestBinaryCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBinaryCoder.swift; sourceTree = "<group>"; };
 		A09A894A207F4DBA0067873B /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09A8957207F4E020067873B /* SimpleBinaryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinaryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +81,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A065C06B207F520E00DA2668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A065C073207F520E00DA2668 /* SimpleBinaryCoder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +127,7 @@
 				A02C4780207F4BB700852927 /* SimpleBinaryCoder.framework */,
 				A09A894A207F4DBA0067873B /* SimpleBinaryCoder.framework */,
 				A09A8957207F4E020067873B /* SimpleBinaryCoder.framework */,
+				A065C06E207F520E00DA2668 /* SimpleBinaryCoderTests iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				A02C4774207F4AF500852927 /* Info.plist */,
+				A065C079207F52D200DA2668 /* TestBinaryCoder.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -206,6 +230,24 @@
 			productReference = A02C4780207F4BB700852927 /* SimpleBinaryCoder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A065C06D207F520E00DA2668 /* SimpleBinaryCoderTests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A065C076207F520E00DA2668 /* Build configuration list for PBXNativeTarget "SimpleBinaryCoderTests iOS" */;
+			buildPhases = (
+				A065C06A207F520E00DA2668 /* Sources */,
+				A065C06B207F520E00DA2668 /* Frameworks */,
+				A065C06C207F520E00DA2668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A065C075207F520E00DA2668 /* PBXTargetDependency */,
+			);
+			name = "SimpleBinaryCoderTests iOS";
+			productName = "SimpleBinaryCoderTests iOS";
+			productReference = A065C06E207F520E00DA2668 /* SimpleBinaryCoderTests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A09A8949207F4DBA0067873B /* SimpleBinaryCoder watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A09A894F207F4DBA0067873B /* Build configuration list for PBXNativeTarget "SimpleBinaryCoder watchOS" */;
@@ -259,6 +301,10 @@
 					A02C477F207F4BB700852927 = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					A065C06D207F520E00DA2668 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
 					A09A8949207F4DBA0067873B = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -283,6 +329,7 @@
 				A09A8956207F4E020067873B /* SimpleBinaryCoder tvOS */,
 				A02C477F207F4BB700852927 /* SimpleBinaryCoder macOS */,
 				A09A8949207F4DBA0067873B /* SimpleBinaryCoder watchOS */,
+				A065C06D207F520E00DA2668 /* SimpleBinaryCoderTests iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +343,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A02C477E207F4BB700852927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A065C06C207F520E00DA2668 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -345,6 +399,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A065C06A207F520E00DA2668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A065C07A207F52D200DA2668 /* TestBinaryCoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A09A8945207F4DBA0067873B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +434,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A065C075207F520E00DA2668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02C4743207F450B00852927 /* SimpleBinaryCoder iOS */;
+			targetProxy = A065C074207F520E00DA2668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A02C4756207F450B00852927 /* Debug */ = {
@@ -613,6 +683,45 @@
 			};
 			name = Release;
 		};
+		A065C077207F520E00DA2668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yidongyunshi.SimpleBinaryCoderTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A065C078207F520E00DA2668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SA22A9L3L;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yidongyunshi.SimpleBinaryCoderTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A09A8950207F4DBA0067873B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -755,6 +864,15 @@
 			buildConfigurations = (
 				A02C4786207F4BB700852927 /* Debug */,
 				A02C4787207F4BB700852927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A065C076207F520E00DA2668 /* Build configuration list for PBXNativeTarget "SimpleBinaryCoderTests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A065C077207F520E00DA2668 /* Debug */,
+				A065C078207F520E00DA2668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
