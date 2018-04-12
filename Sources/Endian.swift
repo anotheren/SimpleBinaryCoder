@@ -12,3 +12,15 @@ public enum Endian {
     case big
     case little
 }
+
+extension Endian: CustomStringConvertible {
+    
+    public var description: String {
+        switch self {
+        case .big:
+            return "BigEndian"
+        case .little:
+            return "LittleEndian"
+        }
+    }
+}
