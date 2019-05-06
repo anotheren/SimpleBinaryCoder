@@ -19,6 +19,6 @@ public struct BinaryCoder: BinaryCodable, Hashable {
     }
     
     public init(bytes: [UInt8]) {
-        self.init(data: Data(bytes: bytes))
+        self.init(data: Data(bytes))
     }
 }
